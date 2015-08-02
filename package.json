@@ -1,0 +1,22 @@
+{
+  "name": "paypal-expressjs",
+  "version": "1.0.0",
+  "description": "Paypal Express with ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "paypal",
+    "express"
+  ],
+  "author": "Rafael Fragoso",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.2",
+    "file-stream-rotator": "0.0.6",
+    "morgan": "^1.6.1",
+    "paypal-express-checkout": "^1.0.3"
+  }
+}

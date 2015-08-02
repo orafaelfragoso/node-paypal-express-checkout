@@ -1,0 +1,9 @@
+<h1>Paypal + Express</h1>
+
+<% if (error) { %>
+  <p>There was an error with your transaction. Please try again.</p>
+<% } %>
+
+<form action='/send_payment' method='POST'>
+  <input type='submit' name='comprar' value='Pagar com PayPal'>
+</form>
