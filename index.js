@@ -27,19 +27,15 @@ var accessLogStream = FileStreamRotator.getStream({
 app.use(morgan('combined', {stream: accessLogStream}));
 
 var paypalConfig = {
-  pas: 'J455UGEMHCJ4T6R5',
-  sign: 'AFcWxV21C7fd0v3bYYYRCpSSRl31AeXoLL6RQiRSO6H1BPY4wOPqZyIt',
+  user: 'sdk-three_api1.sdk.com',
+  pass: 'QFZCWN5HZM8VBG7Q',
+  sign: 'A-IzJhZZjhg29XQ2qnhapuwxIDzyAZQ92FRP5dqBzVesOkzbdUONzmOU',
   success: 'http://localhost:3000/success',
   error: 'http://localhost:3000/cancel',
   debug: true // true for sandbox mode or false for production
 };
 
 var client = paypal.init(paypalConfig.user, paypalConfig.pass, paypalConfig.sign, paypalConfig.success, paypalConfig.error, paypalConfig.debug);
-
-// SANDBOX CREDENTIALS
-// USER=sdk-three_api1.sdk.com
-// PWD=QFZCWN5HZM8VBG7Q
-// SIGNATURE=A-IzJhZZjhg29XQ2qnhapuwxIDzyAZQ92FRP5dqBzVesOkzbdUONzmOU
 
 // CONFIGURE ROUTES
 
